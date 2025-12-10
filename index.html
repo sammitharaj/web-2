@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Registration Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="wrap">
+            <h1 class="brand">Registration</h1>
+            <p class="tagline">Fast, simple registration for our courses</p>
+        </div>
+    </header>
+
+    <main class="wrap">
+        <div class="container">
+            <h2 class="form-title">Online Registration</h2>
+            <form action="process.php" method="POST" id="regForm">
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" name="name" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" required>
+                </div>
+
+                <div class="form-row two-col">
+                    <div>
+                        <label for="phone">Phone</label>
+                        <input id="phone" type="text" name="phone" required>
+                    </div>
+                    <div>
+                        <label for="course">Course</label>
+                        <select id="course" name="course">
+                            <option>BE</option>
+                            <option>BCOM</option>
+                            <option>BSc CS</option>
+                            <option>MSc CS</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="address">Address</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+
+                <div class="form-row">
+                    <button type="submit" id="submitBtn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">© 2025 Your Organization. All rights reserved.</div>
+    </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
